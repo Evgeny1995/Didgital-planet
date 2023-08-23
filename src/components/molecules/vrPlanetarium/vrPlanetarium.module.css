@@ -1,0 +1,36 @@
+.vrPlanetarium {
+  margin: 90px auto 0 auto;
+  padding-bottom: 105px;
+  text-align: center;
+  min-width: 320px;
+  max-width: 1366px;
+}
+
+.title {
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.text {
+  width: 226px;
+  margin: 20px auto 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 137.88%;
+}
+
+.btnOrderContainer {
+  margin: 50px auto 0 auto;
+}
+
+.btnVideoContainer {
+    margin: 12px auto 0 auto;
+}

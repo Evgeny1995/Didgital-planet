@@ -1,0 +1,14 @@
+.socialsMobMenu {
+  margin: 20px 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  width: 72px;
+}
+
+.socialsIcon {
+    opacity: 0.3;
+}
+
+.socialsIcon:hover {
+    opacity: 1;
+}

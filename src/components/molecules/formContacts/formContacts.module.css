@@ -1,0 +1,46 @@
+.formContactsContainer {
+  width: 288px;
+  margin: 20px auto 0 auto;
+}
+
+.formContactsTitle {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 10px;
+}
+
+.formContactsText {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.5px;
+}
+
+.namePosition {
+  margin: 10px auto 0 auto;
+}
+
+.emailPosition {
+  margin: 10px auto 0 auto;
+}
+
+.textAriaPosition {
+  margin: 10px auto 20px auto;
+}
+
+.formSubmitBtn {
+  padding: 9px 15px;
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+}

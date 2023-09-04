@@ -1,16 +1,96 @@
 .headerWrap {
   margin: 0 auto;
-  padding: 20px 20px 2px 20px;
+ 
+  position: relative;
+}
+
+.buttonOrder {
+  width: 108px;
+  height: 34px;
+}
+
+.mobHederNavMenu {
+  z-index: 1;
+  margin: 0;
+  position: absolute;
+  width: 100vw;
+  height: 510px;
+  top: 73px;
+  left: 0;
+  background-color: #1c1c1c;
+  transform: translateY(-120%);
   transition: 1s;
 }
 
-.black {
-  background-color: #1c1c1c;
+.mobHederNavMenuActive {
+  transform: translateY(0);
+  transition: 1s;
+  z-index: 1000;
+  z-index: 1;
 }
 
+.line {
+  background-color: #fff;
+  opacity: 0.24;
+  height: 1px;
+  width: 100%;
+}
 .header {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   background: transparent;
+  z-index: 100;
+  position: relative;
+  padding: 20px 20px 20px 20px;
+  transition: 0.5s;
+}
+
+.black {
+  background-color: #1c1c1c;
+  transition: 1s;
+  z-index: 100;
+  position: relative;
+}
+
+.mobMenuPositionPhone {
+  margin: 30px auto 0 24px;
+  
+}
+
+.socialsMobMenuPosition {
+  margin: 20px auto 28px 21px;
+  
+}
+
+.headerNavPositionMob {
+  flex-direction: column;
+  margin: 34px auto 50px 24px;
+}
+
+@media (min-width: 1366px) {
+  .headerWrap {
+    margin: 0 auto;
+    padding: 43px 64px 43px 64px;
+    transition: 0.5s;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .mobHederNavMenu {
+    display: none;
+  }
+
+  .headerNavPositionDesk {
+    width: 50%;
+    margin: 0px 0 0 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .deskMenuPositionPhone {
+    margin: 8px 0 0 20px ;
+  }
 }

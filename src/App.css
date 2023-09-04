@@ -37,4 +37,6 @@
   src: local("Ubuntu"), local("Ubuntu"), url("./assets/fonts/Ubuntu-Bold.woff2") format("woff2");
 }
 
- 
+.bgBlack {
+  background-color: #0D1117;
+}

@@ -1,6 +1,11 @@
+.wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .btnSmall {
-  width: 108px;
-  height: 34px;
   text-align: center;
   background-color: transparent;
   border: 2px solid #0dd1a2;
@@ -9,9 +14,11 @@
   font-style: normal;
   font-weight: 700;
   letter-spacing: 0.42px;
-  color: #fff;
+  color: #0DD1A2;
   border-radius: 2px;
 }
+
+ 
 
 .btnBig {
   color: #fff;
@@ -21,12 +28,11 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.54px;
-  width: 207px;
-  height: 55px;
   background-color: #15b28d;
   color: #fff;
   border: none;
   border-radius: 2px;
+  text-align: left;
 }
 
 .btnBigTansparent {
@@ -37,9 +43,10 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.54px;
-  width: 207px;
-  height: 55px;
   background-color: transparent;
   border: 3px solid #15b28d;
   border-radius: 2px;
+  align-items: center;
 }
+
+ 

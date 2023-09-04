@@ -1,0 +1,88 @@
+.vrPlanetarium {
+  margin: 90px auto 0 auto;
+  padding-bottom: 105px;
+  text-align: center;
+  min-width: 320px;
+  max-width: 1366px;
+}
+
+.title {
+  font-family: Ubuntu;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.text {
+  width: 226px;
+  margin: 20px auto 0 auto;
+  color: #fff;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 137.88%;
+}
+
+.btnOrderContainer {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn {
+  width: 207px;
+  height: 55px;
+}
+
+@media (min-width: 1366px) {
+  
+
+  .vrPlanetarium {
+    width: 1238px;
+    margin: 0 auto;
+    text-align: left;
+    padding-bottom: 30px;
+    
+  }
+
+  .title {
+    margin-top: 112px;
+    font-family: Ubuntu;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 56px;
+  }
+
+  .text {
+    width: 500px;
+    margin: 20px auto 0 63px;
+    
+    text-align: left;
+    font-family: Ubuntu;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 150%; /* 25.5px */
+  }
+
+  .btnOrderContainer {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    gap: 24px;
+    margin-left: 64px;
+  }
+
+  .socialPositionDesk {
+    margin-top: 154px;
+  }
+}

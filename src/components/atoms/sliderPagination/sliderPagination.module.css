@@ -1,0 +1,13 @@
+.sliderPaginaton {
+    color: #fff;
+  font-family: Ubuntu;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  position: relative;
+  bottom: 38px;
+  z-index: 10;
+  width: 60px;
+  margin: 0 auto;
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./pagesTwo.module.css";
-import useWindowResize from "./../../../hooks/useWindowResize";
+import useWindowResize from "../../../../hooks/useWindowResize";
 import VrPlanetariumDescription from "../../../molecules/vrPlanetariumDescription/vrPlanetariumDescription";
 import VrSlider from "../../../atoms/vrSlider/vrSlider";
 import Astronaut from "../../../../assets/img/Astronaut-in-space.png";

@@ -8,7 +8,7 @@ import styles from "./vrSlider.module.css";
 import arowLeft from "./../../../assets/svg/slider-arow/left.svg";
 import arowRight from "./../../../assets/svg/slider-arow/right.svg";
 import { SliderPagination } from "../sliderPagination/sliderPagination";
-import useWindowResize from "./../../hooks/useWindowResize.jsx";
+import useWindowResize from "../../../hooks/useWindowResize.jsx";
 
 const VrSlider = ({ ...props }) => {
   const { width, height } = useWindowResize();

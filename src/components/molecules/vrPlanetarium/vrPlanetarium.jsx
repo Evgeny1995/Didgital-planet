@@ -3,7 +3,7 @@ import styles from "./vrPlanetarium.module.css";
 import Button, { BUTTONS_VARIANT } from "../../atoms/button/button.jsx";
 import ticket from "./../../../assets/svg/button-svg/Ticket.svg"
 import video from "./../../../assets/svg/button-svg/Video.svg"
-import useWindowResize from "./../../hooks/useWindowResize"
+import useWindowResize from "../../../hooks/useWindowResize"
 import Socials from "../../atoms/socials/socials";
 
 function VrPlanetarium() {

@@ -4,7 +4,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-import useWindowResize from "../../hooks/useWindowResize";
+import useWindowResize from "../../../hooks/useWindowResize";
 import arowLeft from "./../../../assets/svg/slider-arow/left.svg";
 import arowRight from "./../../../assets/svg/slider-arow/right.svg";
 import { SliderPagination } from "../../atoms/sliderPagination/sliderPagination";

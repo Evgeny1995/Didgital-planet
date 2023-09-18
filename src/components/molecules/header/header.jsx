@@ -4,7 +4,7 @@ import logotypeDesktop from "./../../../assets/svg/logoDesktop.svg";
 import Button, { BUTTONS_VARIANT } from "./../../atoms/button/button.jsx";
 import styles from "./header.module.css";
 import MobBurgerMenuBtn from "../../atoms/mobBurgerMenuBtn/mobBurgerMenuBtn";
-import useWindowResize from "../../hooks/useWindowResize";
+import useWindowResize from "../../../hooks/useWindowResize";
 import HeaderNav from "../../atoms/headerNav/headerNav";
 import HeaderPhoneNamber from "../../atoms/headerPhoneNumber/headerPhoneNamber";
 import Socials from "../../atoms/socials/socials";

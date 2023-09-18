@@ -16,6 +16,7 @@ function Button({ variant = BUTTONS_VARIANT.BTNSMALL, title, icon, ...props }) {
 
   return (
     <button
+      {...props}
       type="button"
       className={[css.wrap, styles, props.className].join(" ")}
     >

@@ -11,3 +11,13 @@
   width: 60px;
   margin: 0 auto;
 }
+.opacity {
+  opacity: 0.8;
+}
+
+
+@media(min-width:1366px) {
+  .sliderPaginaton {
+    margin: 0 auto;
+  }
+}

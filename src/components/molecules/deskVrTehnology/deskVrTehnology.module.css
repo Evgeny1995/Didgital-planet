@@ -1,0 +1,60 @@
+.gridWrap {
+  display: none;
+}
+
+@media (min-width: 1360px) {
+  .gridWrap {
+    width: 1104px;
+    height: 408px;
+    display: grid;
+    grid-template-columns: 280px 429px 280px;
+    grid-row-gap: 30px;
+    grid-column-gap: 49px;
+    list-style: none;
+    margin: 62px auto 0 auto;
+  }
+
+  .position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .title {
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 27.748px;
+    margin-bottom: 10px;
+  }
+
+  .title_none {
+    display: none;
+  }
+
+  .text_none {
+    display: none;
+  }
+
+  .text {
+    color: #fff;
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 19.5px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .box3 {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-items: center;
+    justify-items: center;
+  }
+}

@@ -14,15 +14,15 @@ function FormContacts() {
         Мы обязательно свяжемся с вами в течение двух рабочих дней
       </p>
       <form action="">
+        <div className={styles.deskPosition}>
         <Input className={styles.namePosition} placeholder={"Ваше имя"} />
         <Input className={styles.emailPosition} placeholder={"Ваш e-mail"} />
+        </div>
         <ContactsTextAria
           className={styles.textAriaPosition}
           placeholder={"Что вас интересует?"}
         />
-        <Button 
-          className={styles.formSubmitBtn} 
-          title={"ОТПРАВИТЬ"}/>
+        <Button className={styles.formSubmitBtn} title={"ОТПРАВИТЬ"} />
       </form>
     </div>
   );

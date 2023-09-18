@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./pagesSix.module.css";
 import Contacts from "../../../atoms/contacts/contacts";
 import FormContacts from "../../../molecules/formContacts/formContacts";
-import Socials from "../../../atoms/socials/socials";
+import Footer from "../../../molecules/footer/footer";
 
 export default function PagesSix() {
   return (
@@ -13,13 +13,9 @@ export default function PagesSix() {
         </div>
         <div className={styles.pagesSixContactsFormPosition}>
           <Contacts />
-          <FormContacts/>
+          <FormContacts />
         </div>
-        <footer className={styles.footer}>
-            <p className={styles.copyright}>© Digital Planet, 2019</p>
-            <p className={styles.rights}>Детский VR планетарий. Все права защищены.</p>
-          <Socials/>
-        </footer>
+        <Footer />
       </div>
     </div>
   );

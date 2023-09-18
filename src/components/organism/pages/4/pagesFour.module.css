@@ -1,14 +1,12 @@
-.pagesSixContainer {
+.pagesFourContainer {
   width: 100%;
   margin: 0 auto;
-  padding: 90px 0 47px 0;
+  padding: 90px 0 90px 0;
 }
 
-.pagesSixContent {
+.pagesFourContent {
   width: 320px;
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .titleBorder {
@@ -27,34 +25,32 @@
   line-height: normal;
 }
 
-.pagesSixContactsFormPosition {
-  display: flex;
-  flex-direction: column;
-}
-
 @media (min-width: 1366px) {
-  .pagesSixContainer {
-    padding: 150px 0 35px 0;
-    background-image: url("./../../../../assets/img/pageSixBg.png");
+  .pagesFourContainer {
+    background-image: url("./../../../../assets/img/deskPalinitariumDescriptionBg.png");
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 768px;
-  }
-  
-  .pagesSixContent {
-    width: 1187px;
+    width: 100%;
+    height: 768px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    padding: 0;
   }
-  
+
+  .pagesFourContent {
+    width: 1186px;
+    margin: 0 auto;
+    text-align: left;
+    padding: 150px 0 0 0;
+  }
+
   .titleBorder {
-    width: 230px;
-    margin: 0 auto 0 0;
+    width: 343px;
+    margin: 0;
     padding-bottom: 5px;
     border-bottom: 3px solid #0dd1a2;
   }
-  
+
   .title {
     font-family: Ubuntu;
     font-size: 44px;
@@ -62,13 +58,4 @@
     font-weight: 500;
     line-height: normal;
   }
-  
-  .pagesSixContactsFormPosition {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: left;
-  }
-
- 
 }

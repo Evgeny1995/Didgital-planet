@@ -13,13 +13,13 @@ function Contacts() {
       id: "2",
       city: "Новороссийск",
       phone: "+7 (923) 465 – 01 – 41",
-      email: "digitalPlanetNR@mail.ru",
+      email: "digitalPlanetMoscow@mail.ru",
     },
     {
       id: "3",
       city: "Новороссийск",
       phone: "+7 (923) 465 – 01 – 41",
-      email: "digitalPlanetNR@mail.ru",
+      email: "digitalPlanetSaratov@mail.ru",
     },
   ];
 

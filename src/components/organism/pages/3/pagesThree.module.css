@@ -1,10 +1,29 @@
 .deskPagesthreeContainer {
-  display: none;
+  margin: 90px auto 0 auto;
 }
 
+.deskPagesthreeContent {
+  width: 288px;
+  margin: 0 auto;
+}
+
+.titleBodrer {
+  text-align: left;
+  width: 288px;
+  border-bottom: 3px solid #0dd1a2;
+  margin-bottom: 43px;
+}
+
+.title {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
 
 @media (min-width: 1366px) {
-
   .deskPagesthreeContainer {
     display: block;
     background-image: url("./../../../../assets/img/pages3Bg.png");
@@ -15,21 +34,20 @@
     background-attachment: scroll;
     padding: 150px 90px 88px 90px;
     margin: 0 auto;
- 
   }
-  
+
   .deskPagesthreeContent {
     width: 1186px;
     margin: 0 auto;
   }
-  
+
   .titleBodrer {
     text-align: left;
     width: 415px;
-    border-bottom: 3px solid #0DD1A2;
+    border-bottom: 3px solid #0dd1a2;
     margin-bottom: 46px;
   }
-  
+
   .title {
     display: block;
     width: 379px;

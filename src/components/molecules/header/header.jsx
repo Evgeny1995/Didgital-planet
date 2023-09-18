@@ -8,6 +8,7 @@ import useWindowResize from "../../hooks/useWindowResize";
 import HeaderNav from "../../atoms/headerNav/headerNav";
 import HeaderPhoneNamber from "../../atoms/headerPhoneNumber/headerPhoneNamber";
 import Socials from "../../atoms/socials/socials";
+import Modal from "../modal/modal";
 
 function Header() {
   const menuMobLinks = [
@@ -21,6 +22,7 @@ function Header() {
 
   const { width, height } = useWindowResize();
   const [burgerToogleActive, setBurgerToogleActive] = useState(false);
+  const [activeModal, setActiveModal] = useState(false);
 
   return (
     <header className={styles.headerWrap}>
@@ -41,14 +43,16 @@ function Header() {
         )}
 
         <Button
+          onClick={() => setActiveModal(!activeModal)}
+          onChange={() => console.log(activeModal)}
           className={styles.buttonOrder}
           variant={BUTTONS_VARIANT.BTNSMALL}
           title={"ЗАКАЗАТЬ"}
         />
+        <Modal activeModal={activeModal} setActiveModal={setActiveModal} />
         <MobBurgerMenuBtn
           burgerToogleActive={burgerToogleActive}
           setBurgerToogleActive={setBurgerToogleActive}
-          menuMobLinks={menuMobLinks}
         />
         {width >= 1366 && (
           <HeaderPhoneNamber className={styles.deskMenuPositionPhone} />

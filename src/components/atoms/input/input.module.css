@@ -1,5 +1,5 @@
 .input {
-  width: 269px;
+  width: 100%;
   padding: 15px 0 14px 15px;
   color: rgb(28,28,28, 0.4);
   font-family: Ubuntu;
@@ -8,4 +8,14 @@
   font-weight: 400;
   line-height: 16.9px;
   outline: none;
+  border: none;
+  margin: 0 auto;
+}
+
+@media(min-width:1366px) {
+  .input {
+    width: 100%;
+    margin: 0 10px 0 0;
+  }
+
 }

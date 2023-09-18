@@ -4,22 +4,20 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Pagination, Navigation } from "swiper/modules";
-import styles from "./vrSlider.module.css";
+import useWindowResize from "../../hooks/useWindowResize";
 import arowLeft from "./../../../assets/svg/slider-arow/left.svg";
 import arowRight from "./../../../assets/svg/slider-arow/right.svg";
-import { SliderPagination } from "../sliderPagination/sliderPagination";
-import useWindowResize from "./../../hooks/useWindowResize.jsx";
+import { SliderPagination } from "../../atoms/sliderPagination/sliderPagination";
+import styles from "./vrTehnilogySlider.module.css"
 
-const VrSlider = ({ ...props }) => {
+function VrTehnilogySlider({vrTehnologySliderData}) {
   const { width, height } = useWindowResize();
   const [currentNumber, setCurrentNumber] = useState();
 
   const prevRef = useRef(null);
   const nextRef = useRef(null);
-
   return (
-    <div className={styles.vrSliderContainer}>
-      <h3 className={styles.title}>Что показываем в планетарии</h3>
+    <div className={styles.vrTehnologySliderContainer}>
       <div className={styles.swiperContainer}>
         <Swiper
           className="mySwiper"
@@ -29,9 +27,6 @@ const VrSlider = ({ ...props }) => {
           slidesPerView={1}
           modules={[Pagination, Navigation]}
           loop={true}
-          // pagination={{
-          //   type: "fraction",
-          // }}
           navigation={{
             prevEl: prevRef.current,
             nextEl: nextRef.current,
@@ -47,49 +42,40 @@ const VrSlider = ({ ...props }) => {
             setCurrentNumber(swiper.snapIndex);
           }}
         >
-          {/* className={styles.image} */}
-          {props.images.map((image) => (
+           
+          {vrTehnologySliderData.map((item, index) => (
             <SwiperSlide
-              key={image.index}
-              style={
-                width >= 1366
-                  ? {
-                      width: "580px !important",
-                      height: "315px",
-                      display: "flex",
-                      justifyContent: "left",
-                      alignItems: "flex-end",
-                    }
-                  : {
-                      objectFit: "cover",
-                      width: "100%",
-                      height: "100%",
-                    }
-              }
+              key={index}
+              style={{
+                objectFit: "cover",
+                width: "100%",
+                height: "100%",
+              }}
             >
-              <div style={{ zIndex: "3" }}>
+              <div
+                style={{
+                  zIndex: "3",
+                  textAlign: "center",
+                  padding: "50px 0 0px 0",
+                  marginBottom: "30px",
+                }}
+              >
                 <img
-                  style={
-                    width >= 1366
-                      ? {
-                          objectFit: "cover",
-                          width: "561px",
-                          height: "300px",
-                          zIndex: "1",
-                        }
-                      : {
-                          objectFit: "cover",
-                          width: "100%",
-                          height: "100%",
-                          zIndex: "3",
-                        }
-                  }
-                  src={image.url}
-                  alt={image.description}
+                  style={{
+                    objectFit: "contain",
+                    width: "288px",
+                    height: "288px",
+                    position: "relative",
+                    zIndex: "2",
+                  }}
+                  src={item.img}
+                  alt={item.title}
                 />
+                <div className={styles.sliderDescription}>
+                  <h4 className={styles.sliderTile}>{item.title}</h4>
+                  <p className={styles.slidertext}>{item.text}</p>
+                </div>
               </div>
-
-              <div className={styles.greenBorder}></div>
             </SwiperSlide>
           ))}
           <div
@@ -105,9 +91,13 @@ const VrSlider = ({ ...props }) => {
           </div>
         </Swiper>
       </div>
-      <SliderPagination currentNumber={currentNumber} countedAll={6} />
+      <SliderPagination
+        className={styles.position}
+        currentNumber={currentNumber}
+        countedAll={4}
+      />
     </div>
   );
-};
+}
 
-export default VrSlider;
+export default VrTehnilogySlider;

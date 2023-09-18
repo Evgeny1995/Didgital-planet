@@ -21,12 +21,16 @@
   font-weight: 300;
   line-height: 19.5px;
 }
-
+.deskPosition {
+  text-align: center;
+}
 .namePosition {
   margin: 10px auto 0 auto;
+  width: 265px;
 }
 
 .emailPosition {
+  width: 265px;
   margin: 10px auto 0 auto;
 }
 
@@ -43,4 +47,27 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
+}
+
+@media(min-width:1366px) {
+  .formContactsContainer {
+    width: 570px;
+    margin: 50px 0 0 100px;
+  }
+
+  .deskPosition {
+    display: flex;
+  }
+
+  .formContactsTitle {
+    margin-bottom: 14px;
+  }
+
+  .namePosition {
+    margin: 14px auto 0 auto;
+  }
+  
+  .emailPosition {
+    margin: 14px auto 0 auto;
+  }
 }

@@ -6,10 +6,11 @@ import PagesThree from "./components/organism/pages/3/pagesThree";
 import PagesFive from "./components/organism/pages/5/pagesFive";
 import PagesSix from "./components/organism/pages/6/pagesSix";
 import PagesFour from "./components/organism/pages/4/pagesFour";
+import { GlobeLayout } from "./components/molecules/globeLayout/globeLayout";
 
 function App() {
   return (
-    <>
+    <GlobeLayout>
       <div className="bgBlack">
         <PagesOne />
         <PagesTwo />
@@ -18,7 +19,7 @@ function App() {
         <PagesFive />
         <PagesSix />
       </div>
-    </>
+    </GlobeLayout>
   );
 }
 

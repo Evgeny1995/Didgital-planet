@@ -25,9 +25,9 @@
   line-height: normal;
 }
 
-@media(min-width: 1366px) {
+@media (min-width: 1366px) {
   .pagesFiveContainer {
-    background-image: url("./../../../../assets/img/pages5Bg.png");
+    /* background-image: url("./../../../../assets/img/pages5Bg.png"); */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 768px;
@@ -41,16 +41,16 @@
     width: 1186px;
     margin: 0 auto;
     text-align: left;
-    padding: 150px 0 0 0 ;
+    padding: 150px 0 0 0;
   }
-  
+
   .titleBorder {
     width: 616px;
     margin: 0;
     padding-bottom: 5px;
     border-bottom: 3px solid #0dd1a2;
   }
-  
+
   .title {
     font-family: Ubuntu;
     font-size: 44px;

@@ -11,14 +11,12 @@ import { GlobeLayout } from "./components/molecules/globeLayout/globeLayout";
 function App() {
   return (
     <GlobeLayout>
-      <div className="bgBlack">
-        <PagesOne />
-        <PagesTwo />
-        <PagesThree />
-        <PagesFour />
-        <PagesFive />
-        <PagesSix />
-      </div>
+      <PagesOne />
+      <PagesTwo />
+      <PagesThree />
+      <PagesFour />
+      <PagesFive />
+      <PagesSix />
     </GlobeLayout>
   );
 }

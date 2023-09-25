@@ -1,27 +1,25 @@
 .mobPagesTwoContainer {
-  background-image: url("./../../../../assets/img/mobPalinitariumDescriptionBg.png");
+  /* background-image: url("./../../../../assets/img/mobPalinitariumDescriptionBg.png"); */
   background-position: center top;
   background-repeat: no-repeat;
-  background-color: #1c1c1c;
+  /* background-color: #1c1c1c; */
   background-size: 100% 568px;
   background-attachment: scroll;
 }
 
 .deskPagesTwoContainer {
-    background-image: url("./../../../../assets/img/deskPalinitariumDescriptionBg.png");
-    background-position: center top;
-    background-color: #1c1c1c;
-    background-repeat: no-repeat;
-    background-size: 100% 768px;
-    background-attachment: scroll;
-    padding: 0px 90px;
-    
-  }
+  /* background-image: url("./../../../../assets/img/deskPalinitariumDescriptionBg.png"); */
+  background-position: center top;
+  /* background-color: #1c1c1c; */
+  background-repeat: no-repeat;
+  background-size: 100% 768px;
+  background-attachment: scroll;
+  padding: 0px 90px;
+}
 
-.mobPagesTwoContent{
+.mobPagesTwoContent {
   max-width: 1225px;
   margin: 0 auto;
- 
 }
 
 .deskPagesTwoContent {

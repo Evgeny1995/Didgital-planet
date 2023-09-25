@@ -8,7 +8,7 @@ export function GlobeLayout({ children }) {
     <div>
       <div
         style={{
-          position: "absolute",
+          position: "fixed",
           width: "100%",
           height: "100vh",
           zIndex: -1,
@@ -20,6 +20,7 @@ export function GlobeLayout({ children }) {
           ref={$globe}
           globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
           bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+          // enablePointerInteraction={false}
         />
       </div>
 

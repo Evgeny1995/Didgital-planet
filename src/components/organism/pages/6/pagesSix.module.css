@@ -35,26 +35,26 @@
 @media (min-width: 1366px) {
   .pagesSixContainer {
     padding: 150px 0 35px 0;
-    background-image: url("./../../../../assets/img/pageSixBg.png");
+    /* background-image: url("./../../../../assets/img/pageSixBg.png"); */
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 100% 768px;
   }
-  
+
   .pagesSixContent {
     width: 1187px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
   }
-  
+
   .titleBorder {
     width: 230px;
     margin: 0 auto 0 0;
     padding-bottom: 5px;
     border-bottom: 3px solid #0dd1a2;
   }
-  
+
   .title {
     font-family: Ubuntu;
     font-size: 44px;
@@ -62,13 +62,11 @@
     font-weight: 500;
     line-height: normal;
   }
-  
+
   .pagesSixContactsFormPosition {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: left;
   }
-
- 
 }

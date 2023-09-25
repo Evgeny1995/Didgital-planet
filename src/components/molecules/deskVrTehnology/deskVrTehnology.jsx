@@ -37,10 +37,14 @@ function DeskVrTehnology() {
 
   return (
     <ul className={styles.gridWrap}>
-      {vrTehnologySliderData.map((item) => (
-        <li className={item.img ? styles.box3 : styles.box}>
-          <h4 className={item.title ? styles.title : styles.title_none}>{item.title}</h4>
-          <p className={item.text ? styles.text : styles.text_none}>{item.text}</p>
+      {vrTehnologySliderData.map((item, index) => (
+        <li key={`ex-${index}`} className={item.img ? styles.box3 : styles.box}>
+          <h4 className={item.title ? styles.title : styles.title_none}>
+            {item.title}
+          </h4>
+          <p className={item.text ? styles.texst : styles.text_none}>
+            {item.text}
+          </p>
           <img src={item.img} alt="" />
         </li>
       ))}

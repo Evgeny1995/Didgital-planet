@@ -42,12 +42,12 @@
 @media (min-width: 1366px) {
   .deskPagesthreeContainer {
     display: block;
-    background-image: url("./../../../../assets/img/pages3Bg.png");
+    /* background-image: url("./../../../../assets/img/pages3Bg.png");
     background-position: center top;
     background-color: #1c1c1c;
     background-repeat: no-repeat;
     background-size: 100% 768px;
-    background-attachment: scroll;
+    background-attachment: scroll; */
     padding: 150px 90px 88px 90px;
     margin: 0 auto;
   }

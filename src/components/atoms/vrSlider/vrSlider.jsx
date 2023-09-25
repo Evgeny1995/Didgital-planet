@@ -37,13 +37,13 @@ const VrSlider = ({ ...props }) => {
             nextEl: nextRef.current,
           }}
           onSlideChange={(swiper) => setCurrentNumber(swiper.realIndex + 1)}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSwiper={(swiper) => console.log(swiper)}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.init();
             swiper.navigation.update();
-            console.log(swiper.realIndex);
+            // console.log(swiper.realIndex);
             setCurrentNumber(swiper.snapIndex);
           }}
         >

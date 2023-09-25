@@ -1,8 +1,12 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import Globe from "react-globe.gl";
 
 export function GlobeLayout({ children }) {
   const $globe = useRef();
+
+  useEffect(() => {
+    console.log($globe?.current.controls());
+  }, []);
 
   return (
     <div>

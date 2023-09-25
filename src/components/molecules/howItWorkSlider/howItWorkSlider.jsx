@@ -33,13 +33,13 @@ function HowItWorkSlider({ howItWorkListData }) {
             nextEl: nextRef.current,
           }}
           onSlideChange={(swiper) => setCurrentNumber(swiper.realIndex + 1)}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSwiper={(swiper) => console.log(swiper)}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.init();
             swiper.navigation.update();
-            console.log(swiper.realIndex);
+            // console.log(swiper.realIndex);
             setCurrentNumber(swiper.snapIndex);
           }}
         >
@@ -58,7 +58,7 @@ function HowItWorkSlider({ howItWorkListData }) {
                   zIndex: "3",
                   textAlign: "center",
                   padding: "10px 0 0px 0",
-                  marginBottom:"20px"
+                  marginBottom: "20px",
                 }}
               >
                 <img
@@ -66,14 +66,16 @@ function HowItWorkSlider({ howItWorkListData }) {
                     objectFit: "cover",
                     width: "195px",
                     height: "130px",
-                    position:"relative",
+                    position: "relative",
                     zIndex: "2",
                   }}
                   src={item.img}
                   alt={item.title}
                 />
                 <div className={styles.greenBorder}></div>
-                <div className={styles.imgNumber}><p>{item.id}</p></div>
+                <div className={styles.imgNumber}>
+                  <p>{item.id}</p>
+                </div>
                 <div className={styles.sliderDescription}>
                   <h4 className={styles.sliderTile}>{item.title}</h4>
                   <p className={styles.slidertext}>{item.text}</p>
@@ -94,9 +96,13 @@ function HowItWorkSlider({ howItWorkListData }) {
           </div>
         </Swiper>
       </div>
-      <SliderPagination className={styles.position} currentNumber={currentNumber} countedAll={4}/>
+      <SliderPagination
+        className={styles.position}
+        currentNumber={currentNumber}
+        countedAll={4}
+      />
     </div>
   );
 }
- 
+
 export default HowItWorkSlider;

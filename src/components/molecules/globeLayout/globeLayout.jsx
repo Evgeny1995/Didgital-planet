@@ -22,11 +22,12 @@ export function GlobeLayout({ children }) {
 
       // globe.pointOfView({ lat: 47, lng: event.pageY }, 1000);
 
-      if (isTop) {
-        globe.scene().translateY(-70);
-        globe.scene().translateZ(150);
-        setIsTop(false);
-      }
+      // if (isTop) {
+      //   globe.scene().translateY(-70);
+      //   globe.scene().translateZ(150);
+      //   globe.scene().translateX(20);
+      //   setIsTop(false);
+      // }
 
       // setHeight(1900);
     }
@@ -55,7 +56,6 @@ export function GlobeLayout({ children }) {
           showAtmosphere
         />
       </div>
-
       {children}
     </div>
   );

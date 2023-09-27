@@ -1,12 +1,19 @@
 .headerWrap {
   margin: 0 auto;
- 
+
   position: relative;
 }
 
 .buttonOrder {
   width: 108px;
   height: 34px;
+}
+
+/* .logoContainer svg:hover rect {
+  fill: #0dd1a2;
+} */
+.logoContainer svg:hover path {
+  fill: #0dd1a2;
 }
 
 .mobHederNavMenu {
@@ -55,12 +62,10 @@
 
 .mobMenuPositionPhone {
   margin: 30px auto 0 24px;
-  
 }
 
 .socialsMobMenuPosition {
   margin: 20px auto 28px 21px;
-  
 }
 
 .headerNavPositionMob {
@@ -91,6 +96,6 @@
   }
 
   .deskMenuPositionPhone {
-    margin: 8px 0 0 20px ;
+    margin: 8px 0 0 10px;
   }
 }

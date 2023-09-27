@@ -18,7 +18,9 @@
   border-radius: 2px;
 }
 
- 
+.btnSmall:hover {
+  background-color: #0dd1a2;
+}
 
 .btnBig {
   color: #fff;
@@ -35,6 +37,10 @@
   text-align: left;
 }
 
+.btnBig:hover {
+  background-color: #0dd1a2;
+}
+
 .btnBigTansparent {
   color: #fff;
   font-family: Ubuntu;
@@ -49,4 +55,7 @@
   align-items: center;
 }
 
- 
+.btnBigTansparent:hover {
+  background-color: #0dd1a2;
+  border-color: #0dd1a2;
+}

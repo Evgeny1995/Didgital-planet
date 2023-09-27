@@ -12,6 +12,10 @@
   z-index: 2;
 }
 
+.accardionButton:hover .accardionButtonSvgContainer {
+  background-color: #0dd1a2;
+}
+
 .accardionButton::before {
   display: none;
 }

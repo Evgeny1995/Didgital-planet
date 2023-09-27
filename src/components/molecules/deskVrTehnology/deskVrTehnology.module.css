@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 1360px) {
+@media (min-width: 1366px) {
   .gridWrap {
     width: 1104px;
     height: 408px;

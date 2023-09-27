@@ -1,14 +1,14 @@
 import React from "react";
-import styles from "./pagesFour.module.css";
+import styles from "./blockFour.module.css";
 import VrTehnilogySlider from "../../../molecules/vrTehnilogySlider/vrTehnilogySlider";
-import image1 from "./../../../../assets/img/page4/vrGlass1.png"
-import image2 from "./../../../../assets/img/page4/vrGlass2.png"
-import image3 from "./../../../../assets/img/page4/vrGlass3.png"
-import image4 from "./../../../../assets/img/page4/vrGlass4.png"
-import deskVrimg from "./../../../../assets/img/page4/deskVrGlass.png"
+import image1 from "./../../../../assets/img/page4/vrGlass1.png";
+import image2 from "./../../../../assets/img/page4/vrGlass2.png";
+import image3 from "./../../../../assets/img/page4/vrGlass3.png";
+import image4 from "./../../../../assets/img/page4/vrGlass4.png";
+import deskVrimg from "./../../../../assets/img/page4/deskVrGlass.png";
 import DeskVrTehnology from "../../../molecules/deskVrTehnology/deskVrTehnology";
 
-function PagesFour() {
+function BlockFour() {
   const vrTehnologySliderData = [
     {
       id: "1",
@@ -43,11 +43,10 @@ function PagesFour() {
           <h2 className={styles.title}>VR-технология</h2>
         </div>
         <VrTehnilogySlider vrTehnologySliderData={vrTehnologySliderData} />
-        <DeskVrTehnology/>
-        
+        <DeskVrTehnology />
       </div>
     </div>
   );
 }
 
-export default PagesFour;
+export default BlockFour;

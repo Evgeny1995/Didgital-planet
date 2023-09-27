@@ -1,9 +1,5 @@
 import React from "react";
 import styles from "./howItsWork.module.css";
-import image1 from "./../../../assets/img/page3/photo1.png";
-import image2 from "./../../../assets/img/page3/photo2.png";
-import image3 from "./../../../assets/img/page3/photo3.png";
-import image4 from "./../../../assets/img/page3/photo4.png";
 import clsx from "clsx";
 
 const HowItWorkDesk = ({ howItWorkListData }) => {

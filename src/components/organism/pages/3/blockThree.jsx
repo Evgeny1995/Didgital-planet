@@ -1,13 +1,13 @@
 import React from "react";
-import styles from "./pagesThree.module.css";
-import HowItWorkDesk from "../../../atoms/howItsWork/howItsWork";
+import styles from "./blockThree.module.css";
+import HowItWorkDesk from "../../../molecules/howItsWork/howItsWork";
 import HowItWorkSlider from "../../../molecules/howItWorkSlider/howItWorkSlider";
 import image1 from "./../../../../assets/img/page3/photo1.png";
 import image2 from "./../../../../assets/img/page3/photo2.png";
 import image3 from "./../../../../assets/img/page3/photo3.png";
 import image4 from "./../../../../assets/img/page3/photo4.png";
 
-const PagesThree = () => {
+const BlockThree = () => {
   const howItWorkListData = [
     {
       id: "1",
@@ -64,4 +64,4 @@ const PagesThree = () => {
   );
 };
 
-export default PagesThree;
+export default BlockThree;

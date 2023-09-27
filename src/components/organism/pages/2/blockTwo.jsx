@@ -1,11 +1,11 @@
 import React from "react";
-import styles from "./pagesTwo.module.css";
+import styles from "./blockTwo.module.css";
 import useWindowResize from "../../../../hooks/useWindowResize";
 import VrPlanetariumDescription from "../../../molecules/vrPlanetariumDescription/vrPlanetariumDescription";
-import VrSlider from "../../../atoms/vrSlider/vrSlider";
 import Astronaut from "../../../../assets/img/Astronaut-in-space.png";
+import VrSlider from "../../../molecules/vrSlider/vrSlider";
 
-const PagesTwo = () => {
+const BlockTwo = () => {
   const { width, height } = useWindowResize();
   const images = [
     { url: Astronaut, description: "Астронавт в космосе", index: "1" },
@@ -24,11 +24,11 @@ const PagesTwo = () => {
           : styles.mobPagesTwoContainer
       }
     >
-      <div className={
-        width >= 1366
-          ? styles.deskPagesTwoContent
-          : styles.mobPagesTwoContent
-      }>
+      <div
+        className={
+          width >= 1366 ? styles.deskPagesTwoContent : styles.mobPagesTwoContent
+        }
+      >
         <VrPlanetariumDescription />
         <VrSlider images={images} />
       </div>
@@ -36,4 +36,4 @@ const PagesTwo = () => {
   );
 };
 
-export default PagesTwo;
+export default BlockTwo;

@@ -1,14 +1,14 @@
 import React, { useState } from "react";
-import logotype from "./../../../assets/svg/logo.svg";
+import logotype from "../../../assets/svg/logo.svg";
 import logotypeDesktop from "./../../../assets/svg/logoDesktop.svg";
 import Button, { BUTTONS_VARIANT } from "./../../atoms/button/button.jsx";
 import styles from "./header.module.css";
 import MobBurgerMenuBtn from "../../atoms/mobBurgerMenuBtn/mobBurgerMenuBtn";
 import useWindowResize from "../../../hooks/useWindowResize";
-import HeaderNav from "../../atoms/headerNav/headerNav";
+import HeaderNav from "../../molecules/headerNav/headerNav.jsx";
 import HeaderPhoneNamber from "../../atoms/headerPhoneNumber/headerPhoneNamber";
 import Socials from "../../atoms/socials/socials";
-import Modal from "../modal/modal";
+import Modal from "../../molecules/modal/modal.jsx";
 
 function Header() {
   const menuMobLinks = [

@@ -42,7 +42,7 @@ function DeskVrTehnology() {
           <h4 className={item.title ? styles.title : styles.title_none}>
             {item.title}
           </h4>
-          <p className={item.text ? styles.texst : styles.text_none}>
+          <p className={item.text ? styles.text : styles.text_none}>
             {item.text}
           </p>
           <img src={item.img} alt="" />
@@ -53,13 +53,3 @@ function DeskVrTehnology() {
 }
 
 export default DeskVrTehnology;
-
-{
-  /* <div className={styles.gridWrap}>
-<div className={[styles.box1 ,styles.position].join(' ')}>1</div>
-<div className={[styles.box2 ,styles.position].join(' ')}>2</div>
-<div className={[styles.box3 ,styles.position].join(' ')}><img className={styles.center} src={deskVrimg} alt="" /></div>
-<div className={[styles.box4 ,styles.position].join(' ')}>4</div>
-<div className={[styles.box5 ,styles.position].join(' ')}>5</div>
-</div> */
-}

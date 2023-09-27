@@ -1,15 +1,41 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useState } from "react";
 import Globe from "react-globe.gl";
 
 export function GlobeLayout({ children }) {
-  const $globe = useRef();
+  const globeRef = useRef();
 
-  useEffect(() => {
-    console.log($globe?.current.controls());
-  }, []);
+  const [height, setHeight] = useState(1080);
+
+  const [isTop, setIsTop] = useState(true);
+
+  function handleWheel(event) {
+    const globe = globeRef.current;
+
+    if (globe) {
+      const delta = event.clientY / 100;
+      const coords = globe.getCoords(47, 39);
+
+      const lat = coords.latitude - delta * 0.01;
+
+      const rCords = { ...coords, latitude: lat };
+      console.log(event);
+
+      // globe.pointOfView({ lat: 47, lng: event.pageY }, 1000);
+
+      if (isTop) {
+        globe.scene().translateY(-70);
+        globe.scene().translateZ(150);
+        setIsTop(false);
+      }
+
+      // setHeight(1900);
+    }
+  }
+
+  // debouncer, throttler on scroll events
 
   return (
-    <div>
+    <div onWheel={handleWheel}>
       <div
         style={{
           position: "fixed",
@@ -21,10 +47,12 @@ export function GlobeLayout({ children }) {
         }}
       >
         <Globe
-          ref={$globe}
+          width={1920}
+          height={height}
+          ref={globeRef}
           globeImageUrl="//unpkg.com/three-globe/example/img/earth-blue-marble.jpg"
           bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
-          // enablePointerInteraction={false}
+          showAtmosphere
         />
       </div>
 

@@ -1,10 +1,9 @@
 import React from "react";
-import styles from "./pagesSix.module.css";
-import Contacts from "../../../atoms/contacts/contacts";
+import styles from "./blockSix.module.css";
 import FormContacts from "../../../molecules/formContacts/formContacts";
-import Footer from "../../../molecules/footer/footer";
+import Contacts from "../../../molecules/contacts/contacts";
 
-export default function PagesSix() {
+export default function BlockSix() {
   return (
     <div className={styles.pagesSixContainer}>
       <div className={styles.pagesSixContent}>
@@ -15,7 +14,6 @@ export default function PagesSix() {
           <Contacts />
           <FormContacts />
         </div>
-        <Footer />
       </div>
     </div>
   );

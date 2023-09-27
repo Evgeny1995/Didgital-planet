@@ -1,20 +1,18 @@
 import React, { useState } from "react";
-import styles from "./pagesFive.module.css";
+import styles from "./blockFive.module.css";
 import Accardion from "../../../molecules/accardion/accardion.jsx";
 
-const PagesFive = () => {
-
-
+const BlockFive = () => {
   return (
     <div className={styles.pagesFiveContainer}>
       <div className={styles.pagesFiveContent}>
         <div className={styles.titleBorder}>
           <h2 className={styles.title}>Часто задаваемые вопросы</h2>
         </div>
-        <Accardion  />
+        <Accardion />
       </div>
     </div>
   );
 };
 
-export default PagesFive;
+export default BlockFive;

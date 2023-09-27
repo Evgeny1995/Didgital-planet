@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./footer.module.css";
 import Socials from "../../atoms/socials/socials";
 
-function Footer() {
+function Foter() {
   return (
     <footer className={styles.footer}>
       <p className={styles.copyright}>© Digital Planet, 2019</p>
@@ -14,4 +14,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Foter;

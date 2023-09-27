@@ -33,17 +33,14 @@ function HowItWorkSlider({ howItWorkListData }) {
             nextEl: nextRef.current,
           }}
           onSlideChange={(swiper) => setCurrentNumber(swiper.realIndex + 1)}
-          // onSwiper={(swiper) => console.log(swiper)}
           onInit={(swiper) => {
             swiper.params.navigation.prevEl = prevRef.current;
             swiper.params.navigation.nextEl = nextRef.current;
             swiper.navigation.init();
             swiper.navigation.update();
-            // console.log(swiper.realIndex);
             setCurrentNumber(swiper.snapIndex);
           }}
         >
-          {/* className={styles.image} */}
           {howItWorkListData.map((item, index) => (
             <SwiperSlide
               key={index}

@@ -1,8 +1,7 @@
 import React from "react";
-import styles from "./headerNav.module.css"
+import styles from "./headerNav.module.css";
 
-const HeaderNav = ({menuMobLinks, ...props}) => {
-  
+const HeaderNav = ({ menuMobLinks, ...props }) => {
   return (
     <ul className={[styles.mobMenuList, props.className].join(" ")}>
       {menuMobLinks.map((menuMobLink) => (
@@ -13,7 +12,6 @@ const HeaderNav = ({menuMobLinks, ...props}) => {
         </li>
       ))}
     </ul>
-    
   );
 };
 

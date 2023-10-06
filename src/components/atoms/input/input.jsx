@@ -1,12 +1,19 @@
-import React from 'react'
-import styles from "./input.module.css"
+import React, { forwardRef } from "react";
+import styles from "./input.module.css";
+import { debounce, throttle } from "lodash-es";
 
-function Input({...props}) {
+const Input = forwardRef((props, ref) => {
   return (
     <div className={props.className}>
-        <input className={[styles.input, props].join(" ")}  type="text" placeholder={props.placeholder}/>
+      <input
+        ref={ref}
+        {...props}
+        className={[styles.input, props].join(" ")}
+        type="text"
+        placeholder={props.placeholder}
+      />
     </div>
-  )
-}
+  );
+});
 
-export default Input
+export default Input;

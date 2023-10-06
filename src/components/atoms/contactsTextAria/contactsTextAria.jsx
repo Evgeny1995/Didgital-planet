@@ -1,19 +1,19 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./contactsTextAria.module.css";
 
-function ContactsTextAria({ ...props }) {
+const ContactsTextAria = forwardRef((props, ref) => {
   return (
     <div className={props.className}>
       <textarea
+        ref={ref}
         className={styles.textarea}
-        name=""
-        id=""
-        cols="30"
-        rows="10"
+        // cols={props.cols}
+        // rows={props.rows}
+        // {...props}
         placeholder={props.placeholder}
       ></textarea>
     </div>
   );
-}
+});
 
 export default ContactsTextAria;

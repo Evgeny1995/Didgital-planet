@@ -19,6 +19,10 @@
   line-height: normal;
 }
 
+.mobMenuLinks:hover {
+  color: #0dd1a2;
+}
+
 @media (min-width: 1366px) {
   .mobMenuList {
     margin: 0 90px 0 80px;

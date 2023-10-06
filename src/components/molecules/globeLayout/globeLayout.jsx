@@ -8,6 +8,8 @@ import {
   useThrottler,
 } from "../../../hooks/useDebounceThrottle";
 
+import css from "./globeLayout.module.css";
+
 export function GlobeLayout({ children }) {
   const globeRef = useRef();
 
@@ -37,8 +39,10 @@ export function GlobeLayout({ children }) {
     }
     if (isTop) {
       // console.log(event.pageY);
+
       globe.scene().translateY(-70);
       globe.scene().translateZ(150);
+
       globe.scene().translateX(50);
 
       globe.controls().autoRotate = true;
@@ -52,30 +56,14 @@ export function GlobeLayout({ children }) {
     }
   }
 
-  const handleWheelDebounced = useDebounce(handleWheel, 1000);
   const handleWheelThrottled = useThrottler(handleWheel, 300);
-  const hsw = useStandartDebounce(handleWheel, 1000);
 
   return (
-    <div
-      onWheel={hsw}
-      // onWheel={handleWheelDebounced}
-      // onWheel={handleWheel}
-    >
-      <div
-        style={{
-          position: "fixed",
-          width: "100%",
-          height: "100vh",
-          zIndex: -1,
-          top: 0,
-          left: 0,
-          opacity: 1,
-        }}
-      >
+    <div onWheel={handleWheelThrottled} className={css.layout}>
+      <div className={css.root}>
         <Globe
-          width={1920}
-          height={height}
+          // width={1920}
+          // height={height}
           ref={globeRef}
           globeImageUrl={earthNight}
           bumpImageUrl={

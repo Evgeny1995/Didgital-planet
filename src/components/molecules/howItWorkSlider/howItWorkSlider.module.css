@@ -176,7 +176,7 @@ image {
 }
 
 @media (min-width: 1366px) {
-    .howItWorkSliderSwiper {
-        display: none;
-    }
+  .howItWorkSliderSwiper {
+    display: none;
+  }
 }

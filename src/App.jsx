@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import { GlobeLayout } from "./components/molecules/globeLayout/globeLayout";
 import MainBlock from "./components/templates/mainBlock";

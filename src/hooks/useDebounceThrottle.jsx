@@ -13,7 +13,7 @@ function makeDebouncedHook(debounceFn) {
         debounceFn((...args) => {
           latestCb.current(...args);
         }, ms),
-      [ms, latestCb]
+      [ms, latestCb],
     );
 
     useEffect(() => () => debouncedFn.cancel(), [debouncedFn]);

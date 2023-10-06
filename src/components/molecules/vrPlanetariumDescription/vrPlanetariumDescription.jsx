@@ -11,16 +11,16 @@ const VrPlanetariumDescription = () => {
         </h2>
       </div>
       <div className={styles.content}>
-        <p className={[styles.text, styles.text1Position].join(' ')}>
+        <p className={[styles.text, styles.text1Position].join(" ")}>
           Это образовательная программа, использующая технологию виртуальной
           реальности.
         </p>
-        <p className={[styles.text, styles.text2Position].join(' ')}>
+        <p className={[styles.text, styles.text2Position].join(" ")}>
           Зрителям выдаются очки виртуальной реальности, оператор запускает
           сеанс планетария на всех очках одновременно. В коллекции фильмов идут
           обучающие картины о космосе, астрономии и обществознании.
         </p>
-        <p className={[styles.text, styles.text3Position].join(' ')}>
+        <p className={[styles.text, styles.text3Position].join(" ")}>
           За счёт реалестичности и имитации игры такое обучение повышает
           мотивацию и стимулирует активную мозговую деятельность ребёнка.
         </p>

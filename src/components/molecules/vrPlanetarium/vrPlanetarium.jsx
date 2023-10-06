@@ -1,9 +1,9 @@
 import React from "react";
 import styles from "./vrPlanetarium.module.css";
 import Button, { BUTTONS_VARIANT } from "../../atoms/button/button.jsx";
-import ticket from "./../../../assets/svg/button-svg/Ticket.svg"
-import video from "./../../../assets/svg/button-svg/Video.svg"
-import useWindowResize from "../../../hooks/useWindowResize"
+import ticket from "./../../../assets/svg/button-svg/Ticket.svg";
+import video from "./../../../assets/svg/button-svg/Video.svg";
+import useWindowResize from "../../../hooks/useWindowResize";
 import Socials from "../../atoms/socials/socials";
 
 function VrPlanetarium() {
@@ -16,23 +16,23 @@ function VrPlanetarium() {
           Образовательный виртуальный планетарий в Новороссийске. Познавательное
           приключение в мир звёзд и галактик.
         </p>
-        
+
         <div className={styles.btnOrderContainer}>
           <Button
             className={styles.btn}
-            variant={BUTTONS_VARIANT.BTNBIG} 
+            variant={BUTTONS_VARIANT.BTNBIG}
             icon={<img src={ticket} alt="" />}
-            title={"ЗАКАЗАТЬ"} 
+            title={"ЗАКАЗАТЬ"}
           />
-          
-          <Button 
+
+          <Button
             className={styles.btn}
-            variant={BUTTONS_VARIANT.BTNBIGTRANSPARENT} 
-            icon={<img src={video} alt="" />}  
-            title={"ВИДЕО"} 
+            variant={BUTTONS_VARIANT.BTNBIGTRANSPARENT}
+            icon={<img src={video} alt="" />}
+            title={"ВИДЕО"}
           />
         </div>
-        {width >= 1366 && <Socials className={styles.socialPositionDesk}/>}
+        {width >= 1366 && <Socials className={styles.socialPositionDesk} />}
       </div>
     </>
   );

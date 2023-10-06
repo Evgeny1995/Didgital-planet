@@ -157,7 +157,7 @@ image {
 }
 
 @media (min-width: 1366px) {
-    .vrTehnologySliderContainer {
-   display: none;
+  .vrTehnologySliderContainer {
+    display: none;
   }
 }

@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./App.css";
 import { GlobeLayout } from "./components/molecules/globeLayout/globeLayout";
 import MainBlock from "./components/templates/mainBlock";

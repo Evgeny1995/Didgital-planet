@@ -14,7 +14,8 @@
   background-repeat: no-repeat;
   background-size: 100% 768px;
   background-attachment: scroll;
-  padding: 0px 90px;
+  padding: 220px 90px 0 90px;
+  margin: 0px 0 90px 0;
 }
 
 .mobPagesTwoContent {

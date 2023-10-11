@@ -37,7 +37,7 @@ function BlockFour() {
   ];
 
   return (
-    <div className={styles.pagesFourContainer}>
+    <div id={"tehnology"} className={styles.pagesFourContainer}>
       <div className={styles.pagesFourContent}>
         <div className={styles.titleBorder}>
           <h2 className={styles.title}>VR-технология</h2>

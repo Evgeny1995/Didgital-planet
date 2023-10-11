@@ -8,6 +8,7 @@ function BlockOne() {
   return (
     <div>
       <div
+        id={"main"}
         className={
           width >= 1366 ? styles.planetariumBgDesk : styles.planetariumBgMob
         }

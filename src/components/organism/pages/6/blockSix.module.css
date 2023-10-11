@@ -34,7 +34,9 @@
 
 @media (min-width: 1366px) {
   .pagesSixContainer {
-    padding: 150px 0 35px 0;
+    scroll-behavior: smooth;
+    transition: 1s ease-in;
+    padding: 0px 0 35px 0;
     /* background-image: url("./../../../../assets/img/pageSixBg.png"); */
     background-repeat: no-repeat;
     background-position: top center;

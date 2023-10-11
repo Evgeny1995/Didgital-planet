@@ -43,13 +43,13 @@
 @media (min-width: 1366px) {
   .vrPlanetarium {
     width: 1238px;
-    margin: 0 auto;
+    margin:  0 auto;
     text-align: left;
     padding-bottom: 30px;
   }
 
   .title {
-    margin-top: 112px;
+    margin-top: 0px;
     font-family: Ubuntu;
     font-size: 96px;
     font-style: normal;

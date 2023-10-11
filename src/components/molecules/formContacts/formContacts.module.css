@@ -49,6 +49,21 @@
   letter-spacing: 0.42px;
 }
 
+.errorStyle {
+  color: rgb(255, 0, 38);
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+}
+
+.inpContainer {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 1366px) {
   .formContactsContainer {
     width: 570px;
@@ -65,10 +80,30 @@
   }
 
   .namePosition {
-    margin: 14px 0 0 0;
+    margin: 22px 0 0 0;
   }
 
   .emailPosition {
-    margin: 14px 0 0 0;
+    margin: 22px 0 0 0;
   }
+
+  .inpContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formContactsText {
+    margin-bottom: 5px;
+  }
+  .errorStyle {
+    position: absolute;
+    color: rgb(255, 0, 38);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+  }
+
 }

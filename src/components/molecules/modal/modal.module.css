@@ -84,6 +84,16 @@
   color: #ffffff;
 }
 
+.errorStyle {
+  color: rgb(255, 0, 38);
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+}
+
 @media (min-width: 1366px) {
   .modal {
     height: 100%;
@@ -148,5 +158,16 @@
     letter-spacing: 0.42px;
     color: #9d9d9d;
     margin: 0 auto;
+  }
+
+  .errorStyle {
+    color: rgb(255, 0, 38);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    margin: 0 0 0 90px;
   }
 }

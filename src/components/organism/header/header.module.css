@@ -75,9 +75,12 @@
 
 @media (min-width: 1366px) {
   .headerWrap {
+    width: 89vw;
     margin: 0 auto;
     padding: 43px 64px 43px 64px;
     transition: 0.5s;
+    position: fixed;
+    top: 0;
   }
 
   .header {

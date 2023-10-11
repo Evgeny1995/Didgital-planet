@@ -1,6 +1,5 @@
 .planetariumBgMob {
   margin: 0 auto;
-  /* background-image: url("./../../../../assets/img/mob-one-screen-bg.png"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -8,8 +7,8 @@
 
 .planetariumBgDesk {
   margin: 0 auto;
-  /* background-image: url("./../../../../assets/img/desk-one-screen-bg.png"); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 300px;
 }

@@ -3,7 +3,6 @@ import styles from "./formContacts.module.css";
 import Input from "../../atoms/input/input";
 import ContactsTextAria from "../../atoms/contactsTextAria/contactsTextAria";
 import Button from "../../atoms/button/button";
-import useInput from "../../../hooks/useInput.jsx";
 import { useForm } from "react-hook-form";
 
 function FormContacts() {
@@ -11,7 +10,16 @@ function FormContacts() {
     register,
     handleSubmit,
     formState: { errors },
-  } = useForm();
+    reset,
+  } = useForm({
+    mode: "onChange",
+  });
+
+  const onSubmit = (data) => {
+    // alert(JSON.stringify(data));
+    console.log(data);
+    reset();
+  };
 
   return (
     <div className={styles.formContactsContainer}>
@@ -23,37 +31,54 @@ function FormContacts() {
         Мы обязательно свяжемся с вами в течение двух рабочих дней
       </p>
 
-      <form action="">
+      <form onSubmit={handleSubmit(onSubmit)}>
         <div className={styles.deskPosition}>
-          <Input
-            {...register("name")}
-            className={styles.namePosition}
-            placeholder={"Ваше имя"}
-          />
-
-          <Input
-            {...register("email", { required: true })}
-            className={styles.emailPosition}
-            placeholder={"Ваш e-mail"}
-          />
+          <div className={styles.inpContainer}>
+            {errors?.name && (
+              <div className={styles.errorStyle}>{errors.name.message}</div>
+            )}
+            <Input
+              {...register("name", {
+                required: "Name is require field!",
+                minLength: {
+                  value: 3,
+                  message: "Please enter at least 3 characters!",
+                },
+              })}
+              className={styles.namePosition}
+              placeholder={"Ваше имя"}
+              type="text"
+            />
+          </div>
+          <div className={styles.inpContainer}>
+            {errors?.email && (
+              <div className={styles.errorStyle}>{errors.email.message}</div>
+            )}
+            <Input
+              {...register("email", {
+                required: "Please enter valid email!",
+                pattern: {
+                  value: /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/,
+                  message: "Please enter valide email!",
+                },
+              })}
+              className={styles.emailPosition}
+              placeholder={"Ваш e-mail"}
+              type={"text"}
+            />
+          </div>
         </div>
 
         <ContactsTextAria
-          {...register("description")}
           className={styles.textAriaPosition}
           placeholder={"Что вас интересует?"}
-          // cols={75}
-          // rows={10}
         />
-
-        {errors.emails && (
-          <div style={{ color: "red" }}>Field email is required</div>
-        )}
 
         <Button
           className={styles.formSubmitBtn}
           title={"ОТПРАВИТЬ"}
-          onClick={handleSubmit(console.log)}
+          ty
+          //onClick={}
         />
       </form>
     </div>

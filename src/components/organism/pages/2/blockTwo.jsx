@@ -18,6 +18,7 @@ const BlockTwo = () => {
 
   return (
     <div
+      id={"aboutProduct"}
       className={
         width >= 1366
           ? styles.deskPagesTwoContainer

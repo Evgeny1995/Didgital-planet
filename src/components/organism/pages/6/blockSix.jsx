@@ -5,7 +5,7 @@ import Contacts from "../../../molecules/contacts/contacts";
 
 export default function BlockSix() {
   return (
-    <div className={styles.pagesSixContainer}>
+    <div id={"contacts"} className={styles.pagesSixContainer}>
       <div className={styles.pagesSixContent}>
         <div className={styles.titleBorder}>
           <h2 className={styles.title}>Контакты</h2>

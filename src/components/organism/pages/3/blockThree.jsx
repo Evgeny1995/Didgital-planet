@@ -52,7 +52,7 @@ const BlockThree = () => {
   ];
 
   return (
-    <div className={styles.deskPagesthreeContainer}>
+    <div id={"howItWork"} className={styles.deskPagesthreeContainer}>
       <div className={styles.deskPagesthreeContent}>
         <div className={styles.titleBodrer}>
           <h2 className={styles.title}>Как это работает?</h2>

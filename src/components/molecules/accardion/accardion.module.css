@@ -9,7 +9,7 @@
 }
 
 .accardionItem {
-  z-index: 3;
+
   position: relative;
   margin-bottom: 5px;
   /* transition: 2s ease-out; */
@@ -18,14 +18,14 @@
 .accardionHidenContainer {
   height: 0;
   width: 304px;
-  z-index: 1;
+
   visibility: hidden;
-  /* transition: 1s ease-out; */
+   transition: 1s ease-out;
   background-color: #fff;
 }
 
 .accardionHidanContent {
-  padding: 20px 0 20px 0;
+  /*padding: 20px 0 20px 0;*/
   color: #1c1c1c;
   font-family: Ubuntu;
   font-size: 15px;
@@ -35,20 +35,20 @@
   background-color: #fff;
   width: 288px;
   margin: 0 auto;
-  z-index: 1;
+
+  height: 0;
+  transition: 0.1s ease-out
 }
 .open {
-  /* transform: translateY(0px); */
+  padding: 20px 0 20px 0;
 
-  z-index: 1;
-  height: auto;
+  height: 250px;
   visibility: visible;
-  /* transition: 1s ease-out; */
+  transition: 1s ease-out;
 }
 
 @media (min-width: 1366px) {
   .accardionContainer {
-    width: 904px;
     margin: 32px 0 0 0;
     position: relative;
     background-color: transparent;
@@ -57,17 +57,19 @@
     /* transition: 2s ease-out; */
   }
 
-  /* .accardionItem {
-        z-index: 3;
-        position: relative;
-        margin-bottom: 5px;
-        transition: 2s ease-out;
-      } */
+  /*.accardionItem {*/
+
+  /*      position: relative;*/
+  /*      margin-bottom: 5px;*/
+  /*      transition: 2s ease-out;*/
+
+  /*    }*/
 
   .accardionHidenContainer {
     height: 0;
-    width: 904px;
-    z-index: 1;
+    width: 854px;
+    padding: 0 0 0 50px;
+
     visibility: hidden;
     /* transition: 1s ease-out; */
     background-color: #fff;
@@ -75,7 +77,7 @@
   }
 
   .accardionHidanContent {
-    padding: 20px 0 30px 50px;
+
     color: #1c1c1c;
     font-family: Ubuntu;
     font-size: 15px;
@@ -85,15 +87,16 @@
     background-color: #fff;
     width: 640px;
     margin: 0;
-    z-index: 1;
+
+    height: 0;
+    transition: 1s ease-out;
   }
 
   .open {
-    /* transform: translateY(0px); */
-  
-    z-index: 1;
-    height: auto;
+
+    height: 160px;
     visibility: visible;
-    /* transition: 1s ease-out; */
+    transition: 1s ease-out;
+    padding: 20px 0 30px 50px;
   }
 }

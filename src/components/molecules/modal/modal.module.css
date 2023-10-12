@@ -1,0 +1,174 @@
+.modal {
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: scale(0);
+
+}
+
+.modal.active {
+  transform: scale(1);
+}
+
+.modalContent {
+  width: 288px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 136px 0 0 0;
+  position: relative;
+}
+
+.modalClose {
+  position: absolute;
+  top: 26px;
+  right: 0;
+  width: 21px;
+  height: 20px;
+  border: none;
+  background-color: transparent;
+}
+
+.modalClose svg:hover rect {
+  fill: #15b28d;
+  opacity: 1;
+}
+
+.modalTitle {
+  font-family: Ubuntu;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-bottom: 13px;
+}
+
+.modalText {
+  color: #1c1c1c;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 19.5px;
+  margin-bottom: 20px;
+}
+
+.namePosition {
+  outline: none;
+  border: none;
+  margin-bottom: 10px;
+  width: 273px;
+}
+
+.phonePosition {
+  margin-bottom: 30px;
+  width: 273px;
+}
+
+.formSubmitBtn {
+  padding: 9px 15px;
+  text-align: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.42px;
+  color: #9d9d9d;
+  margin: 0 auto;
+}
+
+.formSubmitBtn:hover {
+  color: #ffffff;
+}
+
+.errorStyle {
+  color: rgb(255, 0, 38);
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+}
+
+@media (min-width: 1366px) {
+  .modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(26, 26, 26, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal.active {
+    transform: scale(1);
+  }
+
+  .modalContent {
+    width: 560px;
+    height: 380px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 136px 0 0 0;
+    position: relative;
+    background-color: #f3f3f3;
+  }
+
+  .modalClose {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+    width: 21px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+  }
+
+  .modalText {
+    width: 400px;
+    margin: 0 auto 20px auto;
+  }
+
+  .namePosition {
+    outline: none;
+    border: none;
+    width: 385px;
+    margin: 0 auto 10px auto;
+  }
+  .phonePosition {
+    width: 385px;
+    margin: 0 auto 30px auto;
+  }
+  .formSubmitBtn {
+    padding: 9px 15px;
+    text-align: center;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    color: #9d9d9d;
+    margin: 0 auto;
+  }
+
+  .errorStyle {
+    color: rgb(255, 0, 38);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+    margin: 0 0 0 90px;
+  }
+}

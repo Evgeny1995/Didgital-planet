@@ -1,0 +1,61 @@
+.pagesFourContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 0 90px 0;
+}
+
+.pagesFourContent {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.titleBorder {
+  width: 288px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #0dd1a2;
+}
+
+.title {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (min-width: 1366px) {
+  .pagesFourContainer {
+    /* background-image: url("./../../../../assets/img/deskPalinitariumDescriptionBg.png");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 768px; */
+    width: 100%;
+    height: 768px;
+    margin: 0 auto;
+    padding: 220px 0 0 0;
+  }
+
+  .pagesFourContent {
+    width: 1186px;
+    margin: 0 auto;
+    text-align: left;
+
+  }
+
+  .titleBorder {
+    width: 343px;
+    margin: 0;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #0dd1a2;
+  }
+
+  .title {
+    font-family: Ubuntu;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+}

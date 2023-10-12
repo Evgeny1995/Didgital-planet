@@ -1,13 +1,12 @@
 .burgerSvg {
   margin-top: 7px;
   width: 24px;
-  z-index: 10;
+
 }
 
 .contactMobMenu {
   margin: 30px auto 0 24px;
 }
-
 
 @media (min-width: 1366px) {
   .mobBurgerContainer {

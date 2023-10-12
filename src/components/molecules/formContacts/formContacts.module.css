@@ -21,13 +21,17 @@
   font-weight: 300;
   line-height: 19.5px;
 }
-
+.deskPosition {
+  text-align: center;
+}
 .namePosition {
-  margin: 10px auto 0 auto;
+  margin: 10px 0 0 0;
+  width: 280px;
 }
 
 .emailPosition {
-  margin: 10px auto 0 auto;
+  width: 280px;
+  margin: 10px 0 0 0;
 }
 
 .textAriaPosition {
@@ -43,4 +47,63 @@
   font-weight: 700;
   line-height: normal;
   letter-spacing: 0.42px;
+}
+
+.errorStyle {
+  color: rgb(255, 0, 38);
+  font-family: Ubuntu;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.5px;
+  text-align: left;
+}
+
+.inpContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1366px) {
+  .formContactsContainer {
+    width: 570px;
+    margin: 50px 0 0 100px;
+  }
+
+  .deskPosition {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .formContactsTitle {
+    margin-bottom: 14px;
+  }
+
+  .namePosition {
+    margin: 22px 0 0 0;
+  }
+
+  .emailPosition {
+    margin: 22px 0 0 0;
+  }
+
+  .inpContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .formContactsText {
+    margin-bottom: 5px;
+  }
+  .errorStyle {
+    position: absolute;
+    color: rgb(255, 0, 38);
+    font-family: Ubuntu;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.5px;
+    text-align: left;
+  }
+
 }

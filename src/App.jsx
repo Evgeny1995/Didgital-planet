@@ -1,25 +1,22 @@
-import React from 'react'
-import './App.css'
-import PagesOne from './components/organism/pages/1/pagesOne'
-import PagesTwo from './components/organism/pages/2/pagesTwo'
-import PagesThree from './components/organism/pages/3/pagesThree'
-import PagesFive from './components/organism/pages/5/pagesFive'
-import PagesSix from './components/organism/pages/6/pagesSix'
+import "./App.css";
+import { GlobeLayout } from "./components/molecules/globeLayout/globeLayout";
+import MainBlock from "./components/templates/mainBlock";
+import { Provider } from "react-redux";
+import store from "@/store/index.js";
+import Portal from "@/components/molecules/portal/portal.jsx";
+import Modal from "@/components/molecules/modal/modal.jsx";
 
 function App() {
   return (
-    <>  
-    <div className='bgBlack'>
-       <PagesOne/>
-       <div>
-       <PagesTwo/>
-       </div>
-       <PagesThree/>
-       <PagesFive/>
-       <PagesSix/>
-    </div>
-    </>
-  )
+    <Provider store={store}>
+      <GlobeLayout>
+        <MainBlock />
+      </GlobeLayout>
+      <Portal>
+        <Modal />
+      </Portal>
+    </Provider>
+  );
 }
 
-export default App
+export default App;

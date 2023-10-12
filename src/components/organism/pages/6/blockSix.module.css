@@ -1,0 +1,74 @@
+.pagesSixContainer {
+  width: 100%;
+  margin: 0 auto;
+  padding: 90px 0 47px 0;
+}
+
+.pagesSixContent {
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.titleBorder {
+  width: 288px;
+  margin: 0 auto;
+  padding-bottom: 5px;
+  border-bottom: 3px solid #0dd1a2;
+}
+
+.title {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.pagesSixContactsFormPosition {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 1366px) {
+  .pagesSixContainer {
+    scroll-behavior: smooth;
+    transition: 1s ease-in;
+    padding: 0px 0 35px 0;
+    /* background-image: url("./../../../../assets/img/pageSixBg.png"); */
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% 768px;
+  }
+
+  .pagesSixContent {
+    width: 1187px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .titleBorder {
+    width: 230px;
+    margin: 0 auto 0 0;
+    padding-bottom: 5px;
+    border-bottom: 3px solid #0dd1a2;
+  }
+
+  .title {
+    font-family: Ubuntu;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+
+  .pagesSixContactsFormPosition {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: left;
+  }
+}

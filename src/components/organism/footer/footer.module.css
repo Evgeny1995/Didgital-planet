@@ -1,0 +1,47 @@
+.footer {
+  display: flex;
+  width: 288px;
+  margin: 80px auto 0 auto;
+  flex-direction: column;
+}
+
+.copyright {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16.9px;
+  opacity: 0.64;
+  margin-bottom: 5px;
+}
+
+.rights {
+  color: #fff;
+  font-family: Ubuntu;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16.9px;
+  opacity: 0.64;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 1366px) {
+  .footer {
+    display: flex;
+    width: 1212px;
+    margin: 100px auto 0 auto;
+    padding-bottom: 25px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .rights {
+    margin-bottom: 0;
+  }
+  .copyright {
+    margin-bottom: 0;
+  }
+}

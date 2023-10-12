@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styles from "./blockOne.module.css";
 import VrPlanetarium from "../../../molecules/vrPlanetarium/vrPlanetarium";
 import useWindowResize from "../../../../hooks/useWindowResize";

@@ -75,7 +75,6 @@ image {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  opacity: 0.87;
 }
 
 .swiperButtonNext {
@@ -134,8 +133,8 @@ image {
   .greenBorder {
     display: block;
     position: absolute;
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
     width: 564px;
     height: 280px;
     background-color: transparent;

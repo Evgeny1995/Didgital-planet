@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React from "react";
 import styles from "./modal.module.css";
 import Input from "../../atoms/input/input";
 import Button from "../../atoms/button/button";
@@ -101,7 +101,6 @@ function Modal() {
           />
 
           <Button
-            onClick={() => setActiveModal(!activeModal)}
             onClick={() => dispatch(showModal())}
             className={styles.formSubmitBtn}
             title={"ОТПРАВИТЬ"}

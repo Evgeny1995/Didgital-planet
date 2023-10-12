@@ -9,7 +9,7 @@
 }
 
 .accardionItem {
-  z-index: 3;
+
   position: relative;
   margin-bottom: 5px;
   /* transition: 2s ease-out; */
@@ -18,7 +18,7 @@
 .accardionHidenContainer {
   height: 0;
   width: 304px;
-  z-index: 1;
+
   visibility: hidden;
    transition: 1s ease-out;
   background-color: #fff;
@@ -35,13 +35,13 @@
   background-color: #fff;
   width: 288px;
   margin: 0 auto;
-  z-index: 1;
+
   height: 0;
   transition: 0.1s ease-out
 }
 .open {
   padding: 20px 0 20px 0;
-  z-index: 1;
+
   height: 250px;
   visibility: visible;
   transition: 1s ease-out;
@@ -58,7 +58,7 @@
   }
 
   /*.accardionItem {*/
-  /*      z-index: 3;*/
+
   /*      position: relative;*/
   /*      margin-bottom: 5px;*/
   /*      transition: 2s ease-out;*/
@@ -69,7 +69,7 @@
     height: 0;
     width: 854px;
     padding: 0 0 0 50px;
-    z-index: 1;
+
     visibility: hidden;
     /* transition: 1s ease-out; */
     background-color: #fff;
@@ -87,13 +87,13 @@
     background-color: #fff;
     width: 640px;
     margin: 0;
-    z-index: 1;
+
     height: 0px;
     transition: 1s ease-out;
   }
 
   .open {
-    z-index: 1;
+
     height: 160px;
     visibility: visible;
     transition: 1s ease-out;

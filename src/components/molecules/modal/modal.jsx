@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect, useMemo } from "react";
 import styles from "./modal.module.css";
 import Input from "../../atoms/input/input";
 import Button from "../../atoms/button/button";
 import { useForm } from "react-hook-form";
+import { useSelector, useDispatch } from "react-redux";
+import { showModal } from "@/store/somthingSlice.js";
 
-function Modal({ activeModal, setActiveModal }) {
+function Modal() {
+  const dispatch = useDispatch();
+  const fnModal = useSelector((state) => state.modalshow.value);
   const {
     register,
     handleSubmit,
@@ -17,17 +21,18 @@ function Modal({ activeModal, setActiveModal }) {
     console.log(data);
     reset();
   };
-
+  console.log(fnModal);
   return (
     <div
+      style={{ zIndex: "40" }}
       className={
-        activeModal ? [styles.modal, styles.active].join(" ") : styles.modal
+        fnModal ? [styles.modal, styles.active].join(" ") : styles.modal
       }
-      onClick={() => setActiveModal(false)}
+      // onClick={() => setActiveModal(false)}
     >
       <div className={styles.modalContent} onClick={(e) => e.stopPropagation()}>
         <button
-          onClick={() => setActiveModal(!activeModal)}
+          // onClick={() => setActiveModal(!activeModal)}
           className={styles.modalClose}
         >
           <svg
@@ -96,7 +101,8 @@ function Modal({ activeModal, setActiveModal }) {
           />
 
           <Button
-            // onClick={() => setActiveModal(!activeModal)}
+            onClick={() => setActiveModal(!activeModal)}
+            onClick={() => dispatch(showModal())}
             className={styles.formSubmitBtn}
             title={"ОТПРАВИТЬ"}
           />

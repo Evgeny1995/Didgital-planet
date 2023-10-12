@@ -6,7 +6,7 @@ import useWindowResize from "../../../../hooks/useWindowResize";
 function BlockOne() {
   const { width, height } = useWindowResize();
   return (
-    <div>
+    <div style={{ zIndex: "10" }}>
       <div
         id={"main"}
         className={

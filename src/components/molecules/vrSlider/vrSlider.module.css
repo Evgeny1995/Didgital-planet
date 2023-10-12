@@ -43,7 +43,7 @@ image {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+
 }
 
 .swiper-slide img {
@@ -62,7 +62,7 @@ image {
   line-height: normal;
   position: relative;
   bottom: 38px;
-  z-index: 10;
+
   width: 40px;
   margin: 0 auto;
 }
@@ -84,7 +84,7 @@ image {
   position: absolute;
   bottom: 4px;
   right: 0;
-  z-index: 1;
+
   text-align: center;
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@ image {
   position: absolute;
   bottom: 4px;
   right: 60px;
-  z-index: 1;
+
   text-align: center;
   background-color: #1c1c1c;
 }
@@ -109,7 +109,7 @@ image {
 .space {
   height: 48px;
   position: relative;
-  z-index: 2;
+
 }
 
 .greenBorder {
@@ -140,7 +140,7 @@ image {
     height: 280px;
     background-color: transparent;
     border: 4px solid #0dd1a2;
-    z-index: 1;
+
     padding: 0 0 0 0;
   }
 
@@ -150,7 +150,7 @@ image {
     position: absolute;
     bottom: 4px;
     right: 15px;
-    z-index: 1;
+
     text-align: center;
     display: flex;
     align-items: center;
@@ -167,7 +167,7 @@ image {
     position: absolute;
     bottom: 4px;
     right: 75px;
-    z-index: 1;
+
     text-align: center;
     background-color: #1c1c1c;
   }

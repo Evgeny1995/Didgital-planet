@@ -6,7 +6,8 @@ import useWindowResize from "../../../hooks/useWindowResize";
 import HeaderNav from "../../molecules/headerNav/headerNav.jsx";
 import HeaderPhoneNamber from "../../atoms/headerPhoneNumber/headerPhoneNamber";
 import Socials from "../../atoms/socials/socials";
-import Modal from "../../molecules/modal/modal.jsx";
+import { useDispatch } from "react-redux";
+import { showModal } from "@/store/somthingSlice.js";
 
 function Header() {
   const menuMobLinks = [
@@ -18,9 +19,9 @@ function Header() {
     { value: "КОНТАКТЫ", href: "#contacts", index: "6" },
   ];
 
-  const { width, height } = useWindowResize();
+  const { width } = useWindowResize();
   const [burgerToogleActive, setBurgerToogleActive] = useState(false);
-  const [activeModal, setActiveModal] = useState(false);
+  const dispatch = useDispatch();
 
   return (
     <header className={styles.headerWrap}>
@@ -104,22 +105,18 @@ function Header() {
             </svg>
           )}
         </a>
-
         {width >= 1366 && (
           <HeaderNav
             className={styles.headerNavPositionDesk}
             menuMobLinks={menuMobLinks}
           />
         )}
-
         <Button
-          onClick={() => setActiveModal(!activeModal)}
-          onChange={() => console.log(activeModal)}
+          onClick={() => dispatch(showModal())}
           className={styles.buttonOrder}
           variant={BUTTONS_VARIANT.BTNSMALL}
           title={"ЗАКАЗАТЬ"}
         />
-        <Modal activeModal={activeModal} setActiveModal={setActiveModal} />
         <MobBurgerMenuBtn
           burgerToogleActive={burgerToogleActive}
           setBurgerToogleActive={setBurgerToogleActive}

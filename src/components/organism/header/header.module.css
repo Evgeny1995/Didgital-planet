@@ -17,7 +17,7 @@
 }
 
 .mobHederNavMenu {
-  z-index: 1;
+
   margin: 0;
   position: absolute;
   width: 100vw;
@@ -81,6 +81,7 @@
     transition: 0.5s;
     position: fixed;
     top: 0;
+    z-index: 11;
   }
 
   .header {

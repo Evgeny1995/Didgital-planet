@@ -3,19 +3,19 @@ import { GlobeLayout } from "./components/molecules/globeLayout/globeLayout";
 import MainBlock from "./components/templates/mainBlock";
 import { Provider } from "react-redux";
 import store from "@/store/index.js";
-import { Router, Routes } from "react-router-dom";
+import Portal from "@/components/molecules/portal/portal.jsx";
+import Modal from "@/components/molecules/modal/modal.jsx";
 
 function App() {
   return (
-    // <Router>
-    //   <Routes>
-    <GlobeLayout>
-      <Provider store={store}>
+    <Provider store={store}>
+      <GlobeLayout>
         <MainBlock />
-      </Provider>
-    </GlobeLayout>
-    // </Routes>
-    // </Router>
+      </GlobeLayout>
+      <Portal>
+        <Modal />
+      </Portal>
+    </Provider>
   );
 }
 

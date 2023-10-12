@@ -31,7 +31,8 @@
   .footer {
     display: flex;
     width: 1212px;
-    margin: 100px auto 25px auto;
+    margin: 100px auto 0 auto;
+    padding-bottom: 25px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
